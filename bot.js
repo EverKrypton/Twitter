@@ -3,7 +3,12 @@ const cheerio = require('cheerio');
 const etherscan = require('etherscan-api');
 const bscscan = require('bscscan-api');
 
-const bot = new TelegramBot('6385420793:AAEZefei9NQfrvoothDDnJ3J9hUwQhA3cjc');
+const BOT_TOKEN = '6385420793:AAEZefei9NQfrvoothDDnJ3J9hUwQhA3cjc';
+
+const bot = new TelegramBot(BOT_TOKEN);
+
+bot.startPolling();
+
 
 const ETHERSCAN_API_KEY = 'AZNAMI4V3Z9MQEJN5UN6UX5HM4P2474BI6';
 const BSCSCAN_API_KEY = '8MA6QH3UYVZNGE6VVPSBB5S4NA17TBFD3P';
