@@ -47,7 +47,7 @@ async function sendMessageToTelegram(chatId, message) {
 }
 
 async function checkForNewSmartContracts() {
-  const smartContractAddress = await scrapeTwitter('YOUR_TWITTER_HANDLE');
+  const smartContractAddress = await scrapeTwitter('@Og_kingdev');
 
   if (smartContractAddress) {
     const chain = await checkIfSmartContractIsOnEthOrBsc(smartContractAddress);
